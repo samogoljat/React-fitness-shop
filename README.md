@@ -1,4 +1,4 @@
-Fitness shop project in React
+**Fitness shop project in React**
 
 Runs the front end of application:
 
