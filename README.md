@@ -14,5 +14,5 @@ cd fitness-shop-backend
 node server.js
 ```
 
-Back end of application is listening on localhost:5000
+Back end of application is listening on localhost:5000\
 You can try localhost:5000/home for welcome site
