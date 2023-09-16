@@ -1,14 +1,15 @@
 Fitness shop project in React
 
+Runs the front end of application:
+
 ```
 cd fitness-shop-frontend
 npm start
 ```
-Runs the front end of application.
+
+Runs the back end of application:
 
 ```
 cd fitness-shop-backend
 node server.js
 ```
-Runs the back end of application.
-
