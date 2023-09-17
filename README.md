@@ -6,6 +6,8 @@ Runs the front end of application:
 cd fitness-shop-frontend
 npm start
 ```
+Front end of application is listening on **localhost:3000**
+
 
 Runs the back end of application:
 
