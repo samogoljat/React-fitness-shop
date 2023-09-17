@@ -29,6 +29,9 @@ app.use(express.json());
 app.get('/home', (req, res) => {
   res.send('<h1>Welcome to Fitness HomeSite</h1>')  
 })
+app.get('/', (req, res) => {
+  res.send('<h1>Welcome to Fitness HomeSite</h1>')  
+})
 
 app.listen(PORT, () => {
   console.log(`Server started on http://localhost:${PORT}`);
