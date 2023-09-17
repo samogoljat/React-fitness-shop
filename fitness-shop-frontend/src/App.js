@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './styles/App.css';
-import products from './helpers/products'; // Import the products array
+import products from './helpers/products';
 
 function App() {
 
@@ -17,9 +17,16 @@ function App() {
         <main>
           <ul>
               {products.map(product => (
-                  <li key={product.id}>
-                      {product.name} - {product.price}
-                  </li>
+                <li 
+                  key={product.id} 
+                  style={{
+                    '--bgImage': `url(${product.image})`
+                  }}
+                >
+                  <div className="product-info">
+                    {product.name} - {product.price}
+                  </div>
+              </li>
               ))}
           </ul>
         </main>

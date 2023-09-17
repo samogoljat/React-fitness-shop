@@ -1,9 +1,13 @@
 // products.js
+// In products.js
+import dumbell from '../assets/gym/dumbell.webp';
+import treadmill from '../assets/gym/treadmill.webp';
+import yogamat from '../assets/gym/yogamat.webp';
 
 const products = [
-  { id: 1, name: "Dumbbell (10kg)", price: "$50" },
-  { id: 2, name: "Treadmill", price: "$500" },
-  { id: 3, name: "Yoga Mat", price: "$25" },
+  { id: 1, name: "Dumbbell (10kg)", price: "$50", image: dumbell },
+  { id: 2, name: "Treadmill", price: "$500", image: treadmill },
+  { id: 3, name: "Yoga Mat", price: "$25", image: yogamat },
   { id: 4, name: "Resistance Bands", price: "$15" },
   { id: 5, name: "Kettlebell (15kg)", price: "$45" },
   { id: 6, name: "Rowing Machine", price: "$300" },
