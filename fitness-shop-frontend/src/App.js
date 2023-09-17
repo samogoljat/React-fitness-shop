@@ -1,31 +1,33 @@
-import React from 'react';
-import './App.css';
+import React, { useEffect } from 'react';
+import './styles/App.css';
+import products from './helpers/products'; // Import the products array
 
 function App() {
-  const products = [
-    { id: 1, name: "Dumbbell", price: "$50" },
-    { id: 2, name: "Treadmill", price: "$500" },
-    // ... add more products as needed
-  ];
+
+  useEffect(() => {
+    document.title = "Fitness Shop";
+  }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Fitness Shop</h1>
-      </header>
-      <main>
-        <ul>
-          {products.map(product => (
-            <li key={product.id}>
-              {product.name} - {product.price}
-            </li>
-          ))}
-        </ul>
-      </main>
-      <footer>
-        <p>© 2023 Fitness Shop</p>
-      </footer>
-    </div>
+    <>
+      <div className="App">
+        <header className="App-header">
+          <h1>Fitness Shop</h1>
+        </header>
+        <main>
+          <ul>
+              {products.map(product => (
+                  <li key={product.id}>
+                      {product.name} - {product.price}
+                  </li>
+              ))}
+          </ul>
+        </main>
+        <footer>
+          <p>© 2023 Fitness Shop</p>
+        </footer>
+      </div>
+    </>
   );
 }
 
