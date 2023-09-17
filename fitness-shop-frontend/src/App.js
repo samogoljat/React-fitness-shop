@@ -1,39 +1,34 @@
-import React, { useEffect } from "react";
-import "./styles/App.css";
-import products from "./helpers/products";
+// App.js
+import React, { useState, useEffect } from "react";
+import { fetchProducts } from "./helpers/products";
 
 function App() {
+  const [products, setProducts] = useState([]);
+
   useEffect(() => {
-    document.title = "Fitness Shop";
+    // Fetch the products when the component mounts
+    const loadProducts = async () => {
+      const fetchedProducts = await fetchProducts();
+      setProducts(fetchedProducts);
+    };
+
+    loadProducts();
   }, []);
 
   return (
-    <>
-      <div className="App">
-        <header className="App-header">
-          <h1>Fitness Shop</h1>
-        </header>
-        <main>
-          <ul>
-            {products.map((product) => (
-              <li
-                key={product.id}
-                style={{
-                  backgroundImage: `url(${product.image})`,
-                }}
-              >
-                <span>
-                  {product.name} - {product.price}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </main>
-        <footer>
-          <p>© 2023 Fitness Shop</p>
-        </footer>
-      </div>
-    </>
+    <div className="App">
+      {products.length ? (
+        products.map((product) => (
+          <div key={product.id}>
+            <h3>{product.name}</h3>
+            <p>Price: {product.price}</p>
+            <img src={product.image} alt={product.name} />
+          </div>
+        ))
+      ) : (
+        <p>Loading products...</p>
+      )}
+    </div>
   );
 }
 
