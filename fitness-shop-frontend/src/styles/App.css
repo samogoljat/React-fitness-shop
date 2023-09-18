@@ -1,8 +1,8 @@
 /* Global Styles */
 body, html {
   font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff; 
+  color: #333; /* A deep gray for text */
   margin: 0;
   padding: 0;
   height: 100%;
@@ -11,30 +11,45 @@ body, html {
 .App {
   text-align: center;
   width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
 }
 
 /* Header Styles */
 .App-header {
-  background-color: #1a1a1a;
+  background-color: #f7f7f7; /* Slightly off-white for differentiation */
   padding: 20px 0;
-  border-bottom: 5px solid #ff6347;
+  border-bottom: 3px solid #2F4F6F; /* Stylish muted navy blue */
   font-size: 2em;
-  margin-bottom: 20px;
-  width: 100%;
 }
 
-.header-content,
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
+/* Navbar styles */
+.App-header nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.App-header nav button {
+  background: none; /* Transparent background for a clean look */
+  color: #333; 
+  border: 2px solid #2F4F6F; /* Stylish muted navy blue border */
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.App-header nav button:hover {
+  background: #2F4F6F; /* Muted navy blue on hover */
+  color: #fff; /* White text on hover */
 }
 
 /* Main Content Styles */
 .content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 25px;
@@ -42,31 +57,29 @@ body, html {
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .product {
   position: relative;
   box-sizing: border-box;
   padding: 0;
-  border: 1px solid #444;
+  border: 1px solid #e6e6e6; /* A subtle gray border for each product */
   border-radius: 4px;
-  transition: transform 0.2s;
+  transition: transform 0.2s, border-color 0.3s;
   background-size: cover;
   background-position: center;
 }
 
 .product:hover {
   transform: scale(1.02);
-  border-color: #ff6347;
+  border-color: #2F4F6F; /* Muted navy blue on hover */
   z-index: 1;
 }
 
 .product img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   margin: 0;
 }
@@ -77,28 +90,39 @@ body, html {
   left: 0;
   right: 0;
   font-size: 1.2em;
-  color: #fff;
+  color: #fff; 
   padding: 5px;
-  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+  background-color: rgba(47, 79, 111, 0.8); /* Semi-transparent muted navy blue background */
   text-align: center;
 }
 
 /* Footer Styles */
 footer {
-  background-color: #1a1a1a;
-  color: white;
+  background-color: #f7f7f7;
+  color: #333; 
   font-size: large;
   font-weight: bold;
   padding: 10px 0;
   width: 100%;
+  text-align: center;
+  border-top: 3px solid #2F4F6F; /* Muted navy blue border */
 }
 
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
-  .App {
+  .App-header nav {
+    flex-direction: column;
+  }
+
+  .App-header nav button {
+    margin: 5px 0;
+  }
+
+  .content-container {
     padding: 0 10px;
   }
-  .content-container {
+
+  main ul {
     grid-template-columns: 1fr;
   }
 }
