@@ -1,6 +1,5 @@
 /* Global Styles */
-body,
-html {
+body, html {
   font-family: Arial, sans-serif;
   background-color: #000;
   color: #fff;
@@ -12,9 +11,7 @@ html {
 .App {
   text-align: center;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -23,10 +20,21 @@ html {
   background-color: #1a1a1a;
   padding: 20px 0;
   border-bottom: 5px solid #ff6347;
+  font-size: 2em;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.header-content,
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /* Main Content Styles */
-main ul {
+.content-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 25px;
@@ -34,9 +42,11 @@ main ul {
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-li {
+.product {
   position: relative;
   box-sizing: border-box;
   padding: 0;
@@ -45,17 +55,23 @@ li {
   transition: transform 0.2s;
   background-size: cover;
   background-position: center;
-  height: 300px;
 }
 
-li:hover {
+.product:hover {
   transform: scale(1.02);
   border-color: #ff6347;
   z-index: 1;
 }
 
-/* Text overlaying the image */
-li span {
+.product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+}
+
+.product span {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -82,7 +98,7 @@ footer {
   .App {
     padding: 0 10px;
   }
-  main ul {
+  .content-container {
     grid-template-columns: 1fr;
   }
 }
