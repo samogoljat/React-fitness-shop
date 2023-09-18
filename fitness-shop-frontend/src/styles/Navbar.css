@@ -1,0 +1,55 @@
+/* Navbar.css */
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1a1a1a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-around; /* Adjust this from space-between to space-around */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  margin-right: 50px; /* Add some margin to create space */
+}
+
+.navbar-tabs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-tab {
+  margin-left: 15px;
+}
+
+.navbar-tab a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.navbar-tab a:hover {
+  background-color: #3498db; /* Stylish light blue on hover */
+}
+
+/* Active tab should have a different style */
+.navbar-tab .active {
+  background-color: #3498db; 
+  font-weight: bold;
+}
