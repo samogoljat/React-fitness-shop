@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { fetchProducts } from "../helpers/fetchProducts";
 import { nameChange } from "../helpers/nameChange";
+import '../styles/Product.css';
 
 const MainContent = () => {
   const [products, setProducts] = useState([]);
