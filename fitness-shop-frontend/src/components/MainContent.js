@@ -27,6 +27,7 @@ const MainContent = () => {
             <span>
               {product.name} - {product.price}
             </span>
+            <button className="addToCartBtn">Add to Cart</button>
           </li>
         ))}
       </ul>
