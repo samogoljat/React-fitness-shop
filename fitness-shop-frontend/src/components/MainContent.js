@@ -19,14 +19,16 @@ const MainContent = () => {
     <main>
       <ul>
         {products.map((product) => (
-          <li className="product" key={product.id}>
-            <img
-              src={require(`../assets/gym/${nameChange(product.name)}`)}
-              alt={product.name}
-            />
-            <span>
-              {product.name} - {product.price}
-            </span>
+          <li key={product.id}>
+            <div className="product">
+              <img
+                src={require(`../assets/gym/${nameChange(product.name)}`)}
+                alt={product.name}
+              />
+              <span>
+                {product.name} - {product.price}
+              </span>
+            </div>
             <button className="addToCartBtn">Add to Cart</button>
           </li>
         ))}
