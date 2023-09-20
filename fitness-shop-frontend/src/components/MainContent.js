@@ -1,6 +1,6 @@
-//MainContent.js
+// src/components/MainContent.js
 import React, { useState, useEffect } from "react";
-import { fetchProducts, nameChange } from "../helpers/fetchProducts";
+import { fetchProducts, nameChange } from "../helpers/FetchProducts";
 import "../styles/Product.css";
 import "../styles/MainContent.css";
 

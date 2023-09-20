@@ -1,4 +1,4 @@
-// src/helpers/fetchProducts.js
+// src/helpers/FetchProducts.js
 import axios from 'axios';
 
 export const fetchProducts = async () => {
