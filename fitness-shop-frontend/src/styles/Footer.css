@@ -1,0 +1,9 @@
+/* Footer Styles */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  padding: 10px 0;
+  width: 100%;
+}

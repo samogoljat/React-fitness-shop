@@ -23,36 +23,7 @@ body, html {
   width: 100%;
 }
 
-/* Main Content Styles */
-main {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
 
-main ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 25px;
-  padding: 20px;
-  box-sizing: border-box;
-  list-style-type: none;
-  margin: 0;
-}
-
-
-
-/* Footer Styles */
-footer {
-  background-color: #1a1a1a;
-  color: white;
-  font-size: large;
-  font-weight: bold;
-  padding: 10px 0;
-  width: 100%;
-}
 
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
