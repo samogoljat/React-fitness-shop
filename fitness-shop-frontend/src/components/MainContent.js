@@ -1,40 +1,17 @@
-// src/components/MainContent.js
-import React, { useState, useEffect } from "react";
-import { fetchProducts, nameChange } from "../helpers/FetchProducts";
-import "../styles/Product.css";
-import "../styles/MainContent.css";
+// MainContent.js
+import React from 'react';
+import '../styles/MainContent.css';
 
-const MainContent = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const fetchedProducts = await fetchProducts();
-      setProducts(fetchedProducts);
-    };
-    fetchData();
-  }, []);
-
-  return (
-    <main>
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>
-            <div className="product">
-              <img
-                src={require(`../assets/gym/${nameChange(product.name)}`)}
-                alt={product.name}
-              />
-              <span>
-                {product.name} - {product.price}
-              </span>
-            </div>
-            <button className="addToCartBtn">Add to Cart</button>
-          </li>
-        ))}
-      </ul>
-    </main>
-  );
-};
+function MainContent() {
+    return (
+        <div className="Home-container">
+            <h1>Welcome to Our Gym</h1>
+            <p>Join us and begin your journey towards a healthier lifestyle.</p>
+            <button className="explore-btn" onClick={() => { console.log("Explore button clicked!"); }}>
+                Explore
+            </button>
+        </div>
+    );
+}
 
 export default MainContent;

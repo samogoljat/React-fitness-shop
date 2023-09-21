@@ -1,28 +1,39 @@
 // src/components/Navbar.js
 import React, { useState } from "react";
-import "../styles/Navbar.css"; 
+import "../styles/Navbar.css";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuActive, setMenuActive] = useState(false);
 
   return (
     <div className="navbar">
       <div className="navbar-content">
-        <a href="/" className="navbar-brand">Gym Products</a>
-        
-        {/* Hamburger Menu Button */}
-        <button onClick={() => setIsMenuOpen(prevState => !prevState)} className="hamburger-menu">
+        <Link to="/" className="navbar-brand">
+          Gym Land
+        </Link>
+
+        <button
+          onClick={() => setMenuActive(!menuActive)}
+          className="hamburger-menu"
+        >
           ☰
         </button>
-        
-        {isMenuOpen && (
-          <ul className="navbar-tabs">
-            <li className="navbar-tab"><a href="/">Home</a></li>
-            <li className="navbar-tab"><a href="/shop">Shop</a></li>
-            <li className="navbar-tab"><a href="/about">About</a></li>
-            <li className="navbar-tab"><a href="/contact">Contact</a></li>
-          </ul>
-        )}
+
+        <ul className={`navbar-tabs ${menuActive ? 'active' : ''}`}>
+          <li className="navbar-tab">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="navbar-tab">
+            <Link to="/shop">Shop</Link>
+          </li>
+          <li className="navbar-tab">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="navbar-tab">
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
       </div>
     </div>
   );
