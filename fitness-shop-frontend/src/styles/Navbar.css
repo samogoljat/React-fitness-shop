@@ -6,7 +6,7 @@
   padding: 10px 20px;
   background-color: #1a1a1a;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000;  /* to ensure navbar is above all content */
+  z-index: 1000; /* to ensure navbar is above all content */
 }
 
 .navbar-content {
@@ -79,7 +79,9 @@
 }
 
 .hamburger-menu .bar:nth-child(3) {
-  top: calc(100% - 8px - 3px); /* Positioned to be symmetrical with the first bar */
+  top: calc(
+    100% - 8px - 3px
+  ); /* Positioned to be symmetrical with the first bar */
 }
 
 /* Animation for X formation */
@@ -110,19 +112,19 @@
     left: 0;
     right: 0;
     width: 100%;
-    transform: none; 
+    transform: none;
     display: none;
     flex-direction: column;
   }
 
   .navbar-tab {
     text-align: center;
-    margin: 10px 0; 
+    margin: 10px 0;
   }
 
   .hamburger-menu {
     display: block;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
   }
 
   .navbar-tabs.active {
