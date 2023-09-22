@@ -6,12 +6,12 @@
   padding: 10px 20px;
   background-color: #1a1a1a;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  height: 8em;
+  z-index: 1000;  /* to ensure navbar is above all content */
 }
 
 .navbar-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1200px;
@@ -21,7 +21,6 @@
   font-size: 3em;
   color: white;
   text-decoration: none;
-  margin-right: 50px;
 }
 
 .navbar-tabs {
@@ -29,11 +28,13 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  background-color: #1a1a1a;
+  position: static; /* default position */
 }
 
 .navbar-tab {
   font-size: 2em;
-  margin-left: 15px;
+  margin: 0 15px;
 }
 
 .navbar-tab a {
@@ -45,18 +46,7 @@
 }
 
 .navbar-tab a:hover {
-  background-color: #3498db;
-}
-
-/* Active tab should have a different style */
-.navbar-tab .active {
-  background-color: #3498db;
-  font-weight: bold;
-}
-
-.addToCartBtn:hover {
-  transform: scale(1.02);
-  background-color: #2c80c0;
+  background-color: rgba(52, 152, 219, 0.8);
 }
 
 /* Hamburger Menu */
@@ -64,9 +54,46 @@
   display: none;
   background: none;
   border: none;
-  font-size: 2em;
-  color: white;
+  width: 35px;
+  height: 24px; /* Adjusted height */
   cursor: pointer;
+  position: relative;
+}
+
+.hamburger-menu .bar {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  transition: all 0.3s;
+  left: 0; /* Ensuring it's centered horizontally */
+}
+
+.hamburger-menu .bar:nth-child(1) {
+  top: 8px; /* Centered vertically */
+}
+
+.hamburger-menu .bar:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-menu .bar:nth-child(3) {
+  top: calc(100% - 8px - 3px); /* Positioned to be symmetrical with the first bar */
+}
+
+/* Animation for X formation */
+.hamburger-menu.open .bar:nth-child(1) {
+  transform: translateY(50%) rotate(45deg);
+}
+
+.hamburger-menu.open .bar:nth-child(2) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hamburger-menu.open .bar:nth-child(3) {
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 /* Responsive Behavior */
@@ -74,26 +101,30 @@
   .navbar-content {
     flex-direction: column;
   }
+
   .navbar-brand {
-    margin-right: 0;
     margin-bottom: 10px;
-  }
-  .navbar-tabs {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-  .navbar-tab {
-    margin-left: 0;
-    margin-bottom: 10px;
-    text-align: center;
-    width: 100%;
-  }
-  .hamburger-menu {
-    display: block;
   }
 
-  /* Show the navbar-tabs when "active" class is present on small screens */
+  .navbar-tabs {
+    left: 0;
+    right: 0;
+    width: 100%;
+    transform: none; 
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar-tab {
+    text-align: center;
+    margin: 10px 0; 
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin-bottom: 10px; 
+  }
+
   .navbar-tabs.active {
     display: flex;
   }

@@ -15,9 +15,11 @@ const Navbar = () => {
 
         <button
           onClick={() => setMenuActive(!menuActive)}
-          className="hamburger-menu"
+          className={`hamburger-menu ${menuActive ? 'open' : ''}`}
         >
-          ☰
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
         </button>
 
         <ul className={`navbar-tabs ${menuActive ? 'active' : ''}`}>
