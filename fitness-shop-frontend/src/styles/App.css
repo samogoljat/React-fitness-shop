@@ -10,7 +10,19 @@ body, html {
 }
 
 .App {
+  margin: 0;
+  padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimum height to fill the viewport */
+}
+
+/* .App-content holds your main content */
+.App-content {
+  flex: 1;  /* Take available space */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header Styles */

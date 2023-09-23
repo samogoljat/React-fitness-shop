@@ -1,4 +1,4 @@
-// src/components/MainContent.js
+// src/components/Shop.js
 import React, { useState, useEffect } from "react";
 import { fetchProducts, nameChange } from "../helpers/FetchProducts";
 import "../styles/Product.css";
