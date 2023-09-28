@@ -23,7 +23,15 @@ db.once('open', () => {
   console.log('Successfully connected to MongoDB!');
 
   // Read the gym folder and console.log the product names
-  const GYM_DIR = path.join(__dirname, 'src', 'assets', 'gym');
+  const GYM_DIR = path.join(
+    __dirname,
+    '..',
+    'fitness-shop-frontend',
+    'src',
+    'assets',
+    'gym'
+  );
+
   fs.readdir(GYM_DIR, (err, files) => {
     if (err) {
       console.error('Error reading directory:', err);

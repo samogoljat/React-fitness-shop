@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const gymAssetsDirectory = path.join(__dirname, 'src', 'assets', 'gym');
+const gymAssetsDirectory =
+  'I:\\Dropbox\\Projekti\\Programiranje\\React\\Projekti\\Fitness_shop_app\\fitness-shop-frontend\\src\\assets\\gym';
 
 const fetchFormattedFileNames = () => {
   let formattedNames = [];
