@@ -1,28 +1,28 @@
 const fs = require('fs');
 const path = require('path');
 
-function getFormattedFilenames() {
-  const directoryPath =
-    'I:DropboxProjektiProgramiranjeReactProjektiFitness_shop_app\fitness-shop-frontendsrcassetsgym';
-  console.log(directoryPath);
-  let filenames = [];
+const gymAssetsDirectory = path.join(__dirname, 'src', 'assets', 'gym');
 
-  if (fs.existsSync(directoryPath)) {
-    filenames = fs
-      .readdirSync(directoryPath)
-      .filter(
-        (filename) => filename.endsWith('.jpg') || filename.endsWith('.webp')
-      )
-      .map((filename) => {
-        const nameWithoutExtension = filename.split('.').slice(0, -1).join('.');
-        return nameWithoutExtension
-          .split('_')
-          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-          .join(' ');
-      });
+const fetchFormattedFileNames = () => {
+  let formattedNames = [];
+
+  try {
+    const fileNames = fs.readdirSync(gymAssetsDirectory);
+
+    formattedNames = fileNames.map((fileName) => {
+      // Remove the file extension
+      const nameWithoutExtension = fileName.split('.')[0];
+      // Convert underscores to spaces and capitalize each word
+      return nameWithoutExtension
+        .split('_')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+    });
+  } catch (error) {
+    console.error('Error reading the gym directory:', error);
   }
 
-  return filenames;
-}
+  return formattedNames;
+};
 
-module.exports = { getFormattedFilenames };
+module.exports = fetchFormattedFileNames;

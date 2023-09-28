@@ -1,9 +1,8 @@
-//server.js
-
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const { getFormattedFilenames } = require('./fileHandler');
+const fs = require('fs');
+const path = require('path');
 
 const app = express();
 const PORT = 5000;
@@ -22,6 +21,26 @@ db.on('error', (error) => {
 
 db.once('open', () => {
   console.log('Successfully connected to MongoDB!');
+
+  // Read the gym folder and console.log the product names
+  const GYM_DIR = path.join(__dirname, 'src', 'assets', 'gym');
+  fs.readdir(GYM_DIR, (err, files) => {
+    if (err) {
+      console.error('Error reading directory:', err);
+      return;
+    }
+
+    const formattedNames = files.map((file) => {
+      const fileNameWithoutExt = path.basename(file, path.extname(file));
+      const formattedName = fileNameWithoutExt
+        .split('_')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+      return formattedName;
+    });
+
+    console.log('Formatted names:', formattedNames);
+  });
 });
 
 const productSchema = new mongoose.Schema({
@@ -42,26 +61,6 @@ app.get('/products', async (req, res) => {
     res.json(products);
   } catch (err) {
     res.status(500).send({ message: 'Error fetching products.' });
-  }
-});
-
-app.get('/saveFilenamesToDb', async (req, res) => {
-  const formattedNames = getFormattedFilenames();
-
-  console.log('Formatted names:', formattedNames); // This will log the names to the console
-
-  try {
-    for (const name of formattedNames) {
-      const existingProduct = await Product.findOne({ name: name });
-      if (!existingProduct) {
-        const newProduct = new Product({ name: name });
-        await newProduct.save();
-      }
-    }
-    res.send({ message: 'Names saved successfully' });
-  } catch (err) {
-    console.error('Error while saving names to DB:', err);
-    res.status(500).send({ message: 'Error saving names to database.' });
   }
 });
 
