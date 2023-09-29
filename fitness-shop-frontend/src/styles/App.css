@@ -1,5 +1,12 @@
 /* src/styles/App.css */
 /* Global Styles */
+:root {
+  --cool-gray-light: #D3DCE6;
+  --cool-gray: #AAB7C4;
+  --cool-gray-dark: #808C9A;
+  --cool-gray-darker: #5B6D7B;
+}
+
 body, html {
   font-family: Arial, sans-serif;
   background-color: #fff;
@@ -31,7 +38,7 @@ body, html {
   padding: 20px 0;
   font-size: 2em;
   margin-bottom: 20px;
-  border-bottom: 3px solid #3498db; /* This is a more stylish light blue color */
+  border-bottom: 3px solid var(--cool-gray);
   width: 100%;
 }
 

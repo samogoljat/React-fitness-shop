@@ -1,3 +1,4 @@
+/* src/styles/Contact.ss */
 .Contact-container {
   max-width: 600px;
   margin: 50px auto;
@@ -29,12 +30,12 @@
 }
 
 .Contact-form button {
-  background-color: #3498db;
+  background-color: var(--cool-gray-dark);
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .Contact-form button:hover {
-  background-color: #2c80c0;
+  background-color: var(--cool-gray-darker);
 }

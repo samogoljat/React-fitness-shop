@@ -19,7 +19,7 @@
 
 .product:hover {
   transform: scale(1.02);
-  border-color: #3498db; 
+  border-color: var(--cool-gray);
   z-index: 1;
 }
 
