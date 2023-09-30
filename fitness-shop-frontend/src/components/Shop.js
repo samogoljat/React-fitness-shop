@@ -1,6 +1,6 @@
 // src/components/Shop.js
 import React, { useState, useEffect } from "react";
-import { fetchProducts, nameChange } from "../helpers/FetchProducts";
+import { fetchProducts, nameChange } from "../helpers/fetchProducts";
 import "../styles/Product.css";
 import "../styles/Shop.css";
 
