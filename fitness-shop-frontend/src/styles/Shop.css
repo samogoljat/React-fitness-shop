@@ -3,7 +3,7 @@ main {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
   box-sizing: border-box;
 }
 
@@ -15,6 +15,17 @@ main ul {
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
+}
+
+main ul li {
+  border: 1px solid var(--cool-gray-light); /* This will add a light gray border around each item */
+  padding: 10px 10px 20px 10px; /* Add some space between the item content and the border */
+  border-radius: 5px; /* Optionally, to make the borders slightly rounded */
+  transition: border-color 0.3s ease; /* Optional: for a smooth color transition on hover */
+}
+
+main ul li:hover {
+  border-color: var(--cool-gray-dark); /* Optionally, darken the border on hover */
 }
 
 .addToCartBtn {
