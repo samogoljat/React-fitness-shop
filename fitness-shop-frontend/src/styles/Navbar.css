@@ -1,4 +1,3 @@
-/* src/styles/Navbar.css */
 .navbar {
   display: flex;
   justify-content: center;
@@ -6,7 +5,7 @@
   padding: 10px 20px;
   background-color: #1a1a1a;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* to ensure navbar is above all content */
+  z-index: 1000;
 }
 
 .navbar-content {
@@ -29,7 +28,7 @@
   padding: 0;
   margin: 0;
   background-color: #1a1a1a;
-  position: static; /* default position */
+  position: static;
 }
 
 .navbar-tab {
@@ -49,13 +48,12 @@
   background-color: rgba(52, 152, 219, 0.5);
 }
 
-/* Hamburger Menu */
 .hamburger-menu {
   display: none;
   background: none;
   border: none;
   width: 35px;
-  height: 24px; /* Adjusted height */
+  height: 24px;
   cursor: pointer;
   position: relative;
 }
@@ -70,7 +68,7 @@
 }
 
 .hamburger-menu .bar:nth-child(1) {
-  top: 8px; /* Centered vertically */
+  top: 2px; 
 }
 
 .hamburger-menu .bar:nth-child(2) {
@@ -79,14 +77,13 @@
 }
 
 .hamburger-menu .bar:nth-child(3) {
-  top: calc(
-    100% - 8px - 3px
-  ); /* Positioned to be symmetrical with the first bar */
+  bottom: 2px; 
 }
 
 /* Animation for X formation */
 .hamburger-menu.open .bar:nth-child(1) {
-  transform: translateY(50%) rotate(45deg);
+  width: 41px;
+  transform: translateY(8px) rotate(45deg); 
 }
 
 .hamburger-menu.open .bar:nth-child(2) {
@@ -95,10 +92,10 @@
 }
 
 .hamburger-menu.open .bar:nth-child(3) {
-  transform: translateY(-50%) rotate(-45deg);
+  width: 41px;
+  transform: translateY(-8px) rotate(-45deg); 
 }
 
-/* Responsive Behavior */
 @media (max-width: 768px) {
   .navbar-content {
     flex-direction: column;
@@ -115,6 +112,14 @@
     transform: none;
     display: none;
     flex-direction: column;
+    opacity: 0;
+    transform: translateY(-10px);
+    /* transition: opacity 0.3s, transform 0.3s; */
+  }
+
+  .navbar-tabs.active {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .navbar-tab {
@@ -130,4 +135,19 @@
   .navbar-tabs.active {
     display: flex;
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-tab.fade-in {
+  animation: fadeIn 0.5s ease forwards;
 }
