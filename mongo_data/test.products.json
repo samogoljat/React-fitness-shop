@@ -1,0 +1,189 @@
+[{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73d6"
+  },
+  "id": 1,
+  "name": "Dumbbell 10kg",
+  "price": "$50",
+  "image": "../assets/gym/dumbell.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73d7"
+  },
+  "id": 2,
+  "name": "Treadmill",
+  "price": "$500",
+  "image": "../assets/gym/treadmill.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73d8"
+  },
+  "id": 3,
+  "name": "Yoga Mat",
+  "price": "$25",
+  "image": "../assets/gym/yoga_mat.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73d9"
+  },
+  "id": 4,
+  "name": "Resistance Bands",
+  "price": "$15",
+  "image": "../assets/gym/resistance_bands.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73da"
+  },
+  "id": 5,
+  "name": "Kettlebell 15kg",
+  "price": "$45",
+  "image": "../assets/gym/kettlebell_15kg.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73db"
+  },
+  "id": 6,
+  "name": "Rowing Machine",
+  "price": "$300",
+  "image": "../assets/gym/rowing_machine.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73dc"
+  },
+  "id": 7,
+  "name": "Foam Roller",
+  "price": "$20",
+  "image": "../assets/gym/foam_roller.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73dd"
+  },
+  "id": 8,
+  "name": "Jump Rope",
+  "price": "$10",
+  "image": "../assets/gym/jump_rope.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73de"
+  },
+  "id": 9,
+  "name": "Barbell Set",
+  "price": "$120",
+  "image": "../assets/gym/barbell_set.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73df"
+  },
+  "id": 10,
+  "name": "Weight Bench",
+  "price": "$150",
+  "image": "../assets/gym/weight_bench.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73e0"
+  },
+  "id": 11,
+  "name": "Elliptical Machine",
+  "price": "$350",
+  "image": "../assets/gym/elliptical_machine.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73e1"
+  },
+  "id": 12,
+  "name": "Medicine Ball 5kg",
+  "price": "$30",
+  "image": "../assets/gym/medicine_ball_5kg.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73e2"
+  },
+  "id": 13,
+  "name": "Pull-Up Bar",
+  "price": "$40",
+  "image": "../assets/gym/pull_up_bar.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73e3"
+  },
+  "id": 14,
+  "name": "Stability Ball",
+  "price": "$35",
+  "image": "../assets/gym/stability_ball.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73e4"
+  },
+  "id": 15,
+  "name": "Pilates Ring",
+  "price": "$20",
+  "image": "../assets/gym/pilates_ring.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73e5"
+  },
+  "id": 16,
+  "name": "Yoga Block",
+  "price": "$10",
+  "image": "../assets/gym/yoga_block.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73e6"
+  },
+  "id": 17,
+  "name": "Push-Up Grips",
+  "price": "$15",
+  "image": "../assets/gym/push_up_grips.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73e7"
+  },
+  "id": 18,
+  "name": "Fitness Tracker",
+  "price": "$100",
+  "image": "../assets/gym/fitness_tracker.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73e8"
+  },
+  "id": 19,
+  "name": "Water Bottle",
+  "price": "$12",
+  "image": "../assets/gym/water_bottle.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73e9"
+  },
+  "id": 20,
+  "name": "Gym Bag",
+  "price": "$45",
+  "image": "../assets/gym/gym_bag.webp"
+},
+{
+  "_id": {
+    "$oid": "65159afffad1fd4c109a73ea"
+  },
+  "id": 21,
+  "name": "Whey Protein",
+  "price": "$20",
+  "image": "../assets/gym/whey_protein.webp"
+}]

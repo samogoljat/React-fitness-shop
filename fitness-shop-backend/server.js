@@ -47,7 +47,7 @@ db.once('open', () => {
       return formattedName;
     });
 
-    console.log('Formatted names:', formattedNames);
+    // console.log('Formatted names:', formattedNames);
   });
 });
 
