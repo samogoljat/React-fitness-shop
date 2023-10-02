@@ -4,12 +4,14 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const app = express();
 const PORT = 5000;
 
-const DATABASE_NAME = 'test';
-mongoose.connect(`mongodb://0.0.0.0:27017/${DATABASE_NAME}`, {
+mongoose.connect(process.env.ATLAS_CONNECTION_STRING, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -23,7 +25,6 @@ db.on('error', (error) => {
 db.once('open', () => {
   console.log('Successfully connected to MongoDB!');
 
-  // Read the gym folder and console.log the product names
   const GYM_DIR = path.join(
     __dirname,
     '..',
