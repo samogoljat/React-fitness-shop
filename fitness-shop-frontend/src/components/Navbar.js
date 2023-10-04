@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "../styles/Navbar.css";
+import React, { useState } from 'react';
+import '../styles/Navbar.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-content">
         <Link to="/" className="navbar-brand">
-          Gym Land
+          Gym Bro's
         </Link>
 
         <button

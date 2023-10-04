@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3c30f9dc.css",
+    "main.js": "/static/js/main.64e1f553.js",
+    "static/media/medicine_ball_5kg.jpg": "/static/media/medicine_ball_5kg.ed365ff324ee22de6c47.jpg",
+    "static/media/resistance_bands.webp": "/static/media/resistance_bands.e79761e6c454e58e6c4e.webp",
+    "static/media/gym.jpg": "/static/media/gym.6914d71da1c048ca659e.jpg",
+    "static/media/barbell_set.jpg": "/static/media/barbell_set.1141715c6a6278880959.jpg",
+    "static/media/rowing_machine.webp": "/static/media/rowing_machine.7e427b079f66fc13bf87.webp",
+    "static/media/whey_protein.webp": "/static/media/whey_protein.948c0b41fa317e24ce86.webp",
+    "static/media/water_bottle.webp": "/static/media/water_bottle.e2fecf0f0046525066a3.webp",
+    "static/media/jump_rope.webp": "/static/media/jump_rope.bb8e4fce8dd286db0417.webp",
+    "static/media/treadmill.webp": "/static/media/treadmill.e7e9e5f9299242b63c58.webp",
+    "static/media/yoga_mat.webp": "/static/media/yoga_mat.26f42ffdb442c4ddd0c6.webp",
+    "static/media/dumbbell_10kg.webp": "/static/media/dumbbell_10kg.b89d44d283f9c9184a72.webp",
+    "static/media/yoga_block.webp": "/static/media/yoga_block.cccd483b7ddfea8b33ff.webp",
+    "static/media/fitness_tracker.webp": "/static/media/fitness_tracker.cbba148c4197746649f5.webp",
+    "static/media/weight_bench.webp": "/static/media/weight_bench.0f01fc96eb157215fbcd.webp",
+    "static/media/elliptical_machine.webp": "/static/media/elliptical_machine.2ae2f31ea04f477ecc64.webp",
+    "static/media/foam_roller.webp": "/static/media/foam_roller.3600f01735647a093393.webp",
+    "static/media/kettlebell_15kg.webp": "/static/media/kettlebell_15kg.cd86d9bf16d8470668f1.webp",
+    "static/media/stability_ball.webp": "/static/media/stability_ball.7b22c39bb2aa95c3ae17.webp",
+    "static/media/pull-up_bar.webp": "/static/media/pull-up_bar.b51b72d9065e3eb75a3c.webp",
+    "static/media/push-up_grips.webp": "/static/media/push-up_grips.1411350862a074c003f0.webp",
+    "static/media/pilates_ring.webp": "/static/media/pilates_ring.0b305d7cd83ffc96a1c2.webp",
+    "static/media/gym_bag.webp": "/static/media/gym_bag.07a6d6211708db080972.webp",
+    "index.html": "/index.html",
+    "main.3c30f9dc.css.map": "/static/css/main.3c30f9dc.css.map",
+    "main.64e1f553.js.map": "/static/js/main.64e1f553.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c30f9dc.css",
+    "static/js/main.64e1f553.js"
+  ]
+}
