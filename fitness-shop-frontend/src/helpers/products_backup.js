@@ -22,7 +22,7 @@ import water_bottle from '../assets/gym/water_bottle.webp';
 import gym_bag from '../assets/gym/gym_bag.webp';
 import whey_protein from '../assets/gym/whey_protein.webp';
 
-const products = [
+export const products = [
   { id: 1, name: 'Dumbbell 10kg', price: '$50', image: dumbbell_10kg },
   { id: 2, name: 'Treadmill', price: '$500', image: treadmill },
   { id: 3, name: 'Yoga Mat', price: '$25', image: yoga_mat },
