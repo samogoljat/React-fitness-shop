@@ -1,5 +1,6 @@
 // MainContent.js
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import '../styles/Home.css';
 
 function MainContent() {
@@ -9,14 +10,10 @@ function MainContent() {
       <p>
         Join us and begin your journey towards a healthier lifestyle. Oh yeah.
       </p>
-      <button
-        className="explore-btn"
-        onClick={() => {
-          console.log('Explore button clicked!');
-        }}
-      >
+      {/* Replace button with Link */}
+      <Link to="/about" className="explore-btn">
         Explore
-      </button>
+      </Link>
     </div>
   );
 }
