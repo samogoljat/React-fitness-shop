@@ -1,3 +1,4 @@
+ /* fitness-shop-frontend/styles/Navbar.css */
 .navbar {
   display: flex;
   justify-content: center;
@@ -136,6 +137,26 @@
     display: flex;
   }
 }
+
+.login-btn {
+  background-color: #3498db; /* Blue background */
+  color: #ffffff; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Slightly rounded corners */
+  padding: 10px 20px; /* Vertical and horizontal padding */
+  font-size: 16px; /* Text size */
+  cursor: pointer; /* Hand cursor on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+}
+
+.login-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.login-btn:active {
+  transform: scale(0.95); /* Slightly scale down the button when active */
+}
+
 
 @keyframes fadeIn {
   from {

@@ -1,6 +1,7 @@
+// Navbar.js
 import React, { useState } from 'react';
-import '../styles/Navbar.css';
 import { Link } from 'react-router-dom';
+import '../styles/Navbar.css';
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -33,6 +34,11 @@ const Navbar = () => {
           </li>
           <li className="navbar-tab">
             <Link to="/contact">Contact</Link>
+          </li>
+          <li className="navbar-tab">
+            <Link to="/login">
+              <button className="login-btn">Login</button>
+            </Link>
           </li>
         </ul>
       </div>
