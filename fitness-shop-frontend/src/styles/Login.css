@@ -2,26 +2,65 @@
   max-width: 400px;
   margin: auto;
   text-align: center;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-container:hover {
+  transform: scale(1.02);  /* Slight zoom on hover */
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 input, button {
-  padding: 10px;
+  padding: 12px;
   font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input:focus {
+  border-color: #4CAF50;  /* Green border on input focus */
 }
 
 button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: none;
   color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
   background-color: #45a049;
+}
+
+label {
+  align-self: flex-start;  /* Aligns label to the start */
+  font-weight: 500;  /* Slightly bolder label */
+}
+
+h1 {
+  margin-bottom: 20px;  /* Add space below the title */
+  color: #333;  /* Darker text color */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
