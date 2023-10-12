@@ -17,6 +17,11 @@ main ul {
   margin: 0;
 }
 
+.product-link {
+  text-decoration: none;
+  color: inherit;  /* Keep text color consistent */
+}
+
 main ul li {
   border: 1px solid var(--cool-gray-light); /* This will add a light gray border around each item */
   padding: 10px 10px 20px 10px; /* Add some space between the item content and the border */

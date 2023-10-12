@@ -1,3 +1,4 @@
+// fitness-shop-frontend/src/helpers/fetchProducts.js
 import dumbbell_10kg from '../assets/gym/dumbbell_10kg.webp';
 import treadmill from '../assets/gym/treadmill.webp';
 import yoga_mat from '../assets/gym/yoga_mat.webp';
