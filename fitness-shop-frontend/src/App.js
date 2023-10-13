@@ -8,6 +8,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Login from './components/Login';
 import ProductDetail from './components/ProductDetail';
+import Cart from './components/Cart'; // Import Cart component
+import { CartProvider } from './components/CartContext'; // Import CartProvider
 import "./styles/App.css";
 
 function App() {
@@ -16,22 +18,25 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <div className="App">
-        <Navbar /> 
-        <div className="App-content">
-          <Routes>
-            <Route path="/" element={<Home />} />      
-            <Route path="/shop" element={<Shop />} /> 
-            <Route path="/product/:productId" element={<ProductDetail />} />   
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact/>} />
-            <Route path="/login" element={<Login/>} />
-          </Routes>
+    <CartProvider> {/* Wrap your app with CartProvider */}
+      <Router>
+        <div className="App">
+          <Navbar /> 
+          <div className="App-content">
+            <Routes>
+              <Route path="/" element={<Home />} />      
+              <Route path="/shop" element={<Shop />} /> 
+              <Route path="/shop/:productId" element={<ProductDetail />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/cart" element={<Cart />} /> 
+              <Route path="/login" element={<Login />} />
+            </Routes>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </Router>
+      </Router>
+    </CartProvider>
   );
 }
 export default App;

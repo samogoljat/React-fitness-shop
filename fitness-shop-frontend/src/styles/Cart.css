@@ -1,0 +1,25 @@
+.cart {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1em;
+}
+
+.cart img {
+  width: 100px;
+  height: 100px;
+}
+
+.cart h3, .cart p {
+  margin: 0.5em 0;
+}

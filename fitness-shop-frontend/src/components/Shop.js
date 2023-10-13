@@ -2,10 +2,13 @@
 import React from 'react';
 import { products } from '../helpers/fetchProducts';
 import { Link } from 'react-router-dom';
+import { useCart } from "../components/CartContext";
 import '../styles/Product.css';
 import '../styles/Shop.css';
 
 const Shop = () => {
+  const { addToCart } = useCart(); // Add this line to get the addToCart function
+
   return (
     <main>
       <ul>
@@ -18,8 +21,10 @@ const Shop = () => {
                   {product.name} - {product.price}
                 </span>
               </div>
-              <button className="addToCartBtn">Add to Cart</button>
             </Link>
+            <button onClick={() => addToCart(product)} className="addToCartBtn">
+              Add to Cart
+            </button>
           </li>
         ))}
       </ul>
