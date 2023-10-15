@@ -6,7 +6,7 @@ import '../styles/Home.css';
 function MainContent() {
   return (
     <div className="Home-container">
-      <h1>Welcome to Gym Bro's</h1>
+      <h1>Welcome to Bro's Gym </h1>
       <p>
         Join us and begin your journey towards a healthier lifestyle. Oh yeah.
       </p>

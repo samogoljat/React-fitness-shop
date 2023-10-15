@@ -7,7 +7,7 @@ import '../styles/Product.css';
 import '../styles/Shop.css';
 
 const Shop = () => {
-  const { addToCart } = useCart(); // Add this line to get the addToCart function
+  const { addToCart } = useCart(); 
 
   return (
     <main>
@@ -17,9 +17,10 @@ const Shop = () => {
             <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="product">
                 <img src={product.image} alt={product.name} />
-                <span>
-                  {product.name} - {product.price}
-                </span>
+                <div className="product-info">
+                  <span className="product-name">{product.name}</span>
+                  <span className="product-price">€{product.price}</span>
+                </div>
               </div>
             </Link>
             <button onClick={() => addToCart(product)} className="addToCartBtn">

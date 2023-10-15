@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-content">
         <Link to="/" className="navbar-brand">
-          Gym Bro's
+        Bro's Gym 
         </Link>
 
         <button
