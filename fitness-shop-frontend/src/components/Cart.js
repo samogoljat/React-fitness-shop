@@ -31,7 +31,9 @@ const Cart = () => {
                                 <span>{product.quantity}</span>
                                 <button onClick={() => addToCart(product)}>+</button>
                             </div>
-                            <p>{formatPrice(product.price)} x {product.quantity} = {formatPrice(product.price * product.quantity)}</p>
+                            <div className="cart-item-price">
+                              {formatPrice(product.price)} x {product.quantity} = {formatPrice(product.price * product.quantity)}
+                            </div>
                         </li>
                     ))}
                 </ul>
