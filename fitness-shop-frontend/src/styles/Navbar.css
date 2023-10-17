@@ -1,4 +1,4 @@
- /* fitness-shop-frontend/styles/Navbar.css */
+/* fitness-shop-frontend/styles/Navbar.css */
 .navbar {
   display: flex;
   justify-content: center;
@@ -35,8 +35,8 @@
 .navbar-tab {
   font-size: 2em;
   margin: 0 15px;
-  display: flex;           /* Add this line */
-  align-items: center;     /* Add this line */
+  display: flex; /* Add this line */
+  align-items: center; /* Add this line */
   justify-content: center; /* Add this line */
 }
 
@@ -72,7 +72,7 @@
 }
 
 .hamburger-menu .bar:nth-child(1) {
-  top: 2px; 
+  top: 2px;
 }
 
 .hamburger-menu .bar:nth-child(2) {
@@ -81,13 +81,13 @@
 }
 
 .hamburger-menu .bar:nth-child(3) {
-  bottom: 2px; 
+  bottom: 2px;
 }
 
 /* Animation for X formation */
 .hamburger-menu.open .bar:nth-child(1) {
   width: 41px;
-  transform: translateY(8px) rotate(45deg); 
+  transform: translateY(8px) rotate(45deg);
 }
 
 .hamburger-menu.open .bar:nth-child(2) {
@@ -97,7 +97,7 @@
 
 .hamburger-menu.open .bar:nth-child(3) {
   width: 41px;
-  transform: translateY(-8px) rotate(-45deg); 
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 @media (max-width: 768px) {
@@ -121,7 +121,10 @@
     /* transition: opacity 0.3s, transform 0.3s; */
   }
 
-
+  .navbar-tabs.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
   .navbar-tab {
     text-align: center;
@@ -141,14 +144,14 @@
 .login-btn {
   background-color: #4c6aaf;
   color: #ffffff;
-  border: none; 
-  border-radius: 4px; 
-  padding: 10px 20px; 
-  cursor: pointer; 
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 .login-btn:hover {
-  background-color: #0a0898; 
+  background-color: #0a0898;
 }
 
 .cart-count {
@@ -161,4 +164,3 @@
   top: 10px;
   right: 10px;
 }
-
