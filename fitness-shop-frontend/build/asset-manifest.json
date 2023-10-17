@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.000eb8af.css",
+    "main.css": "/static/css/main.f92530ea.css",
     "main.js": "/static/js/main.9f5c9256.js",
     "static/media/medicine_ball_5kg.jpg": "/static/media/medicine_ball_5kg.ed365ff324ee22de6c47.jpg",
     "static/media/home4.jpg": "/static/media/home4.e23bfdce4b8a5c756bab.jpg",
@@ -25,11 +25,11 @@
     "static/media/pilates_ring.webp": "/static/media/pilates_ring.0b305d7cd83ffc96a1c2.webp",
     "static/media/gym_bag.webp": "/static/media/gym_bag.07a6d6211708db080972.webp",
     "index.html": "/index.html",
-    "main.000eb8af.css.map": "/static/css/main.000eb8af.css.map",
+    "main.f92530ea.css.map": "/static/css/main.f92530ea.css.map",
     "main.9f5c9256.js.map": "/static/js/main.9f5c9256.js.map"
   },
   "entrypoints": [
-    "static/css/main.000eb8af.css",
+    "static/css/main.f92530ea.css",
     "static/js/main.9f5c9256.js"
   ]
 }
