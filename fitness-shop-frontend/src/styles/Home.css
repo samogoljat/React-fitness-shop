@@ -5,21 +5,27 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url('../assets/gym/gym.jpg') no-repeat center center/cover;
+  background: url('../assets/site_pictures/home4.jpg') no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 20px;
 }
 
 .Home-container h1 {
-  font-size: 3em;
+  font-size: 5em;
   margin-bottom: 20px;
   color: white;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+
 }
 
 .Home-container p {
-  font-size: 1.5em;
+  font-size: 2em;
   margin-bottom: 40px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .explore-btn {
@@ -29,8 +35,11 @@
   border: none;
   border-radius: 5px;
   color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .explore-btn:hover {
