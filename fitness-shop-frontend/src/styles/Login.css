@@ -29,11 +29,11 @@ input, button {
 }
 
 input:focus {
-  border-color: #4CAF50;  /* Green border on input focus */
+  border-color: #000000;  /* Green border on input focus */
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #4c6aaf;
   border: none;
   color: white;
   cursor: pointer;
@@ -41,7 +41,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #0a0898;
 }
 
 label {

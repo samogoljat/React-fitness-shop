@@ -31,7 +31,7 @@
 .explore-btn {
   padding: 15px 30px;
   font-size: 1.2em;
-  background-color: var(--cool-gray-dark);
+  background-color: #4c6aaf;
   border: none;
   border-radius: 5px;
   color: white;
@@ -43,5 +43,5 @@
 }
 
 .explore-btn:hover {
-  background-color: var(--cool-gray-darker);
+  background-color: #0a0898;
 }

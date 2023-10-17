@@ -30,12 +30,12 @@
 }
 
 .Contact-form button {
-  background-color: var(--cool-gray-dark);
+  background-color: #4c6aaf;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .Contact-form button:hover {
-  background-color: var(--cool-gray-darker);
+  background-color: #0a0898;
 }

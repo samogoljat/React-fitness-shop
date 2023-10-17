@@ -39,14 +39,14 @@ main ul li:hover {
   border-radius: 25px;    /* round the button's edges */
   font-weight: bold;      /* make button text bolder */
   font-size: 1.2em;       /* increase button font size */
-  background-color: var(--cool-gray-dark);
+  background-color: #4c6aaf;
   color: white;
   border: none;               /* Remove default borders */
   cursor: pointer;           /* Change cursor to hand pointer on hover */
 }
 
 .addToCartBtn:hover {
-  background-color: var(--cool-gray-darker);
+  background-color: #0a0898;
 }
 
 /* Adjust media query as necessary */

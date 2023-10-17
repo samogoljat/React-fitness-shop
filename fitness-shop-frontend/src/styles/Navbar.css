@@ -121,10 +121,7 @@
     /* transition: opacity 0.3s, transform 0.3s; */
   }
 
-  .navbar-tabs.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
+
 
   .navbar-tab {
     text-align: center;
@@ -142,23 +139,16 @@
 }
 
 .login-btn {
-  background-color: gray; /* Adjusted background color */
-  color: #ffffff; /* White text */
-  border: none; /* No border */
-  border-radius: 4px; /* Slightly rounded corners */
-  padding: 10px 20px; /* Vertical and horizontal padding */
-  font-size: 20px; /* Text size */
-  cursor: pointer; /* Hand cursor on hover */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+  background-color: #4c6aaf;
+  color: #ffffff;
+  border: none; 
+  border-radius: 4px; 
+  padding: 10px 20px; 
+  cursor: pointer; 
 }
 
 .login-btn:hover {
-  background-color: darkgray; /* Darker gray on hover */
-}
-
-
-.login-btn:active {
-  transform: scale(0.95); /* Slightly scale down the button when active */
+  background-color: #0a0898; 
 }
 
 .cart-count {
@@ -172,22 +162,3 @@
   right: 10px;
 }
 
-.cart-tab {
-  position: relative;
-}
-
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.navbar-tab.fade-in {
-  animation: fadeIn 0.5s ease forwards;
-}
