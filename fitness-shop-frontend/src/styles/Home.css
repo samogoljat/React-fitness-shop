@@ -1,12 +1,17 @@
 /* src/styles/Home.css */
 .Home-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background: url('../assets/site_pictures/home4.jpg') no-repeat center center/cover;
-  color: white;
+  overflow: hidden;
+}
+
+.Home-content {
+  z-index: 2;
   text-align: center;
   padding: 20px;
 }
@@ -17,7 +22,6 @@
   color: white;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: black;
-
 }
 
 .Home-container p {
@@ -38,10 +42,21 @@
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
 }
 
 .explore-btn:hover {
   background-color: #0a0898;
+  transform: scale(1.05);
+}
+
+.Home-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }

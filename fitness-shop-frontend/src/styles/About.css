@@ -14,12 +14,31 @@
   text-align: center;
 }
 
+.About-image-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.About-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+}
+
 .About-text {
   font-size: 1.2em;
   line-height: 1.6;
   margin-bottom: 30px;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .About-highlight {
   color: #3498db;
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
