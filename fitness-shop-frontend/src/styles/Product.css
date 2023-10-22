@@ -13,7 +13,7 @@
   transition: transform 0.2s;
   background-size: cover;
   background-position: center;
-  height: 300px; /* Adjust this based on your preferred height */
+  height: 300px; 
   overflow: hidden;
 }
 
@@ -25,12 +25,12 @@
 
 .product img {
   width: 100%;
-  height: auto;  /* Change height to auto */
+  height: auto;  
   object-fit: contain;
   display: block;
   margin: 0;
-  border-radius: 4px 4px 0 0; /* added rounded corners to top */
-  height: 70%; /* Adjust this percentage as needed */
+  border-radius: 4px 4px 0 0; 
+  height: 70%; 
   margin: auto;
   object-fit: contain;
   display: block;

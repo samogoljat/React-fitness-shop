@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <CartProvider> {/* Wrap your app with CartProvider */}
+    <CartProvider> 
       <Router>
         <div className="App">
           <Navbar /> 

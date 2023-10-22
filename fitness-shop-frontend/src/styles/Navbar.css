@@ -35,9 +35,9 @@
 .navbar-tab {
   font-size: 2em;
   margin: 0 15px;
-  display: flex; /* Add this line */
-  align-items: center; /* Add this line */
-  justify-content: center; /* Add this line */
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
 }
 
 .navbar-tab a {
@@ -68,7 +68,7 @@
   width: 100%;
   background-color: white;
   transition: all 0.3s;
-  left: 0; /* Ensuring it's centered horizontally */
+  left: 0; 
 }
 
 .hamburger-menu .bar:nth-child(1) {
