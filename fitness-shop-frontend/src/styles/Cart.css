@@ -18,7 +18,7 @@
 
 .cart li {
   display: flex;
-  justify-content: space-between; /* Reset back to space-between */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   margin-bottom: 20px;
@@ -29,7 +29,7 @@
 .cart-item {
   display: flex;
   align-items: center;
-  width: calc(100% - 120px); /* Deduct the approximate width of the price */
+  width: calc(100% - 120px);
 }
 
 .cart img {
@@ -41,14 +41,15 @@
 .cart-item-info {
   display: flex;
   align-items: center;
-  flex-grow: 1; /* Allow this container to take up remaining space */
+  flex-grow: 1;
 }
 
 .cart h2 {
   margin-bottom: 20px;
 }
 
-.cart h3, .cart p {
+.cart h3,
+.cart p {
   margin: 0.5em 0;
   font-size: 18px;
 }
@@ -56,7 +57,7 @@
 .cart-item-actions {
   display: flex;
   align-items: center;
-  margin-right: 20px; /* Move margin here for space between actions and price */
+  margin-right: 20px;
 }
 
 .cart-item-actions button {
@@ -83,10 +84,10 @@
 }
 
 .cart-item-price {
-  width: 150px; /* Set to a value that ensures enough space for your largest expected price */
+  width: 150px;
   text-align: right;
-  overflow: hidden; /* Optional: in case content exceeds width */
-  white-space: nowrap; /* Prevent wrapping within container */
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .cart-total {
@@ -104,7 +105,8 @@
 
 /* Responsive Styles */
 
-@media (max-width: 768px) { /* Tablet and below */
+@media (max-width: 768px) {
+  /* Tablet and below */
   .cart {
     width: 95%;
     padding: 10px;
@@ -116,7 +118,8 @@
     margin-right: 15px;
   }
 
-  .cart h3, .cart p {
+  .cart h3,
+  .cart p {
     font-size: 16px;
   }
 
@@ -142,7 +145,8 @@
   }
 }
 
-@media (max-width: 480px) { /* Mobile */
+@media (max-width: 480px) {
+  /* Mobile */
   .cart li {
     flex-direction: column;
     align-items: center;
@@ -154,7 +158,8 @@
     margin-bottom: 10px;
   }
 
-  .cart-item-info, .cart-item-actions {
+  .cart-item-info,
+  .cart-item-actions {
     justify-content: center;
     margin-bottom: 10px;
   }
