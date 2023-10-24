@@ -14,7 +14,7 @@ const Shop = () => {
       <ul>
         {products.map((product) => (
           <li key={product.id}>
-            <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link to={`/shop/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="product">
                 <img src={product.image} alt={product.name} />
                 <div className="product-info">
