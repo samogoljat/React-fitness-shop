@@ -19,37 +19,35 @@ main ul {
 
 .product-link {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
 
 main ul li {
-  border: 1px solid var(--cool-gray-light); 
+  border: 1px solid var(--cool-gray-light);
   padding: 10px 10px 20px 10px;
-  border-radius: 5px; 
-  transition: border-color 0.3s ease; 
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
 }
 
 main ul li:hover {
-  border-color: var(--cool-gray-dark); 
+  border-color: var(--cool-gray-dark);
 }
 
 .addToCartBtn {
-
-  padding: 15px;         
-  border-radius: 25px; 
-  font-weight: bold;     
-  font-size: 1.2em;      
+  padding: 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.2em;
   background-color: #4c6aaf;
   color: white;
-  border: none;           
-  cursor: pointer;          
+  border: none;
+  cursor: pointer;
 }
 
 .addToCartBtn:hover {
   background-color: #0a0898;
 }
 
-/* Adjust media query as necessary */
 @media (max-width: 768px) {
   main {
     padding: 0 10px;
@@ -58,4 +56,3 @@ main ul li:hover {
     grid-template-columns: 1fr;
   }
 }
-
